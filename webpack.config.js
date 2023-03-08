@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    index: './src/views/index.js',
+    app: './src/controllers/weatherContainer.js',
   },
   mode: 'development',
   output: {
