@@ -41,6 +41,7 @@ async function getWeather(city) {
   console.log(weatherData);
   // Log the information
   console.log(`The current weather in ${coordinates[2]} at coordinates ${coordinates[0]} in the country ${weatherData.sys.country} is ${weatherData.main.temp} degrees celsius`);
+  return weatherData.main.temp;
 }
 
-export { parseResponse, getCoordinates, getWeather };
+export default getWeather;
