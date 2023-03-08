@@ -8,9 +8,9 @@ const textContainer = document.getElementById('userWeather');
 /* getWeather is an async function, so we have to wait for it to
 complete before changing the text of our element */
 
-async function handleClick() {
+async function handleWeatherSubmit() {
   const text = await getWeather(getUserSearchLocation());
   textContainer.innerText = text;
 }
 
-button.addEventListener('click', handleClick);
+button.addEventListener('click', handleWeatherSubmit);
