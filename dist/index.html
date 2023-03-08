@@ -2,21 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Weatherette</title>
+    <title>WeatherWatch</title>
   </head>
   <body>
     <script src="app.bundle.js" defer></script>
     
     <header>
-      <h1>Weatherette</h1>
-      <h2>A simple weather app</h2>
+      <div id="left">
+        <img src="/src/assets/cellphone.png" alt="Cellphone with thunder cloud">
+        <h1>WeatherWatch</h1>
+        <div id="search">
+          <label for="weather">Search for a city: </label>
+          <input id="weather" name="weather">
+          <button id="weatherSubmit">Search</button>
+        </div>
+      </div>
+
+      <div id="right">
+        <div id="temperatureChange">
+          <img src="/src/assets/thermometer.png" alt="Two thermometers with Celsius and Fahrenheit symbols beside them">
+        </div>
+      </div>
     </header>
 
     <div id="weatherContainer">
-      <label for="weather">Enter a city for weather</label>
-      <input id="weather" name="weather">
-      <button id="weatherSubmit">Search</button>
-      <p id="userWeather"></p>
+      <div class="weatherRow" id="currentConditions">
+        <div id="currentTemp"></div>
+        <div id="otherConditions"></div>
+      </div>
+      <div class="weatherRow" id="forecast"></div>
     </div>
   </body>
 </html>

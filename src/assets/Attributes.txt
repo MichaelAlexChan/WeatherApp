@@ -1,0 +1,8 @@
+<a href="https://www.flaticon.com/free-icons/sunny" title="sunny icons">Sunny icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/rainy" title="rainy icons">Rainy icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/snow" title="snow icons">Snow icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/storm" title="storm icons">Storm icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/climate" title="climate icons">Climate icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/heat" title="heat icons">Heat icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/wind" title="wind icons">Wind icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/atmospheric" title="atmospheric icons">Atmospheric icons created by Freepik - Flaticon</a>

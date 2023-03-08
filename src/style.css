@@ -6,24 +6,94 @@ html, body {
 }
 
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
+/* Styling for the header */
 header {
+  border: 2px solid black;
+  background-color: #7884ab;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 2vh 4vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#left {
+  display: flex;
   align-items: center;
 }
 
+#left > img {
+  height: 4em;
+}
+
+#search {
+  color: white;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+#search > input {
+  font-size: 18px;
+  height: 2em;
+  min-width: 300px;
+  border-style: hidden;
+  margin-right: 3%;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search > label {
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 180px;
+}
+
+#right {
+  display: flex;
+  align-items: center;
+}
+
+#temperatureChange > img {
+  height: 4em;
+}
+/* Styling for main weather container */
 #weatherContainer {
   border: 2px solid black;
-  width: 75vw;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 85%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
+
+.weatherRow {
+  grid-row:1/2;
+  background-color: aqua;
+}
+
+/* Styling for the current conditions */
+#currentConditions {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#currentTemp {
+  background-color: pink;
+}
+
+#otherConditions {
+  background-color: orange;
+}
+
+/* Styling for the weekly forecast */
+#forecast {
+border: 1px solid red;
+grid-row: 2/3
+}
+/* Styling for the footer */
