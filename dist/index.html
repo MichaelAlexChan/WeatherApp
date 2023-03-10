@@ -20,6 +20,14 @@
 
       <div id="right">
         <div id="temperatureChange">
+          <div id="tempSwitcher">
+            <p>Unit:</p>
+            <p id="currentUnit">Celsius</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
           <img src="/src/assets/thermometer.png" alt="Two thermometers with Celsius and Fahrenheit symbols beside them">
         </div>
       </div>
@@ -27,7 +35,12 @@
 
     <div id="weatherContainer">
       <div class="weatherRow" id="currentConditions">
-        <div id="currentTemp"></div>
+        <div id="currentTempContainer">
+          <h2 id="">Toronto</h2>
+          <h3>23</h3>
+          <h3>cloudy</h3>
+          <img src="../src/assets/cloudy.png">
+        </div>
         <div id="otherConditions"></div>
       </div>
       <div class="weatherRow" id="forecast"></div>
