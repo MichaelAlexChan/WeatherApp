@@ -181,6 +181,10 @@ input:checked + .slider:before {
 
 #otherConditions {
   background-color: orange;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
 }
 
 /* Styling for the weekly forecast */
