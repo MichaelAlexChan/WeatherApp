@@ -7,7 +7,7 @@ function parseResponse(response) {
 five objects that match the city argument */
 async function getCoordinates(city) {
   // insert the city argument into the url with a template literal
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=c1547c57bf49fae207b1edc2cd34e27e`;
+  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=c1547c57bf49fae207b1edc2cd34e27e`;
 
   // store the response of the fetch from the OpenWeatherMap server
   const response = await fetch(url);

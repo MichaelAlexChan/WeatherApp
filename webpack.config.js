@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     app: './src/controllers/weatherContainer.js',
+    editView: './src/view/generateRow.js',
   },
   mode: 'development',
   output: {

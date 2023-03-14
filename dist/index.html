@@ -6,6 +6,7 @@
   </head>
   <body>
     <script src="app.bundle.js" defer></script>
+    <script src="editView.bundle.js" defer></script>
     
     <header>
       <div id="left">
@@ -37,10 +38,10 @@
 
       <div class="weatherRow" id="currentConditions">
         <div id="currentTempContainer">
-          <h2 id="">Toronto</h2>
-          <h3 id="currentTemp">23</h3>
-          <h3>cloudy</h3>
-          <img src="../src/assets/cloudy.png">
+          <h2 id="location">Enter a location</h2>
+          <h3 id="currentTemp"></h3>
+          <h3 id="currentCondition"></h3>
+          <img id="conditionImg">
         </div>
 
         <div id="otherConditions">
@@ -54,7 +55,9 @@
 
       </div>
 
-      <div class="weatherRow" id="forecast"></div>
+      <div class="weatherRow" id="forecast">
+      
+      </div>
     </div>
   </body>
 </html>

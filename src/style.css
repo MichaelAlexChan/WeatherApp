@@ -179,12 +179,22 @@ input:checked + .slider:before {
   margin:0;
 }
 
+/* Styling for other conditions */
+
 #otherConditions {
   background-color: orange;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.otherCondition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Styling for the weekly forecast */
