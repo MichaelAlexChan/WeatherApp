@@ -1,13 +1,16 @@
 export default function generateForecastTile() {
-  const forecastRow = document.getElementById('forecast');
-  console.log(forecastRow);
+  const forecastTile = document.getElementById('forecast');
+  forecastTile.classList.add('forecastTile');
+
+  const day = document.createElement('h1');
+  forecastTile.appendChild(day);
 
   const condition = document.createElement('h2');
-  forecastRow.appendChild(condition);
+  forecastTile.appendChild(condition);
 
   const temperature = document.createElement('h1');
-  forecastRow.appendChild(temperature);
+  forecastTile.appendChild(temperature);
 
   const img = document.createElement('img');
-  forecastRow.appendChild(img);
+  forecastTile.appendChild(img);
 }

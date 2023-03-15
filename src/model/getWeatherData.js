@@ -30,18 +30,21 @@ async function getWeather(city) {
   const coordinates = await getCoordinates(city);
 
   // insert the coordinates and the measure type (metric) into the url using a template literal
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates[0]}&lon=${coordinates[1]}&units=${'metric'}&appid=c1547c57bf49fae207b1edc2cd34e27e`;
+  const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates[0]}&lon=${coordinates[1]}&units=${'metric'}&appid=c1547c57bf49fae207b1edc2cd34e27e`;
+  const currentForecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates[0]}&lon=${coordinates[1]}&units=${'metric'}&cnt=24&appid=c1547c57bf49fae207b1edc2cd34e27e`;
 
   // store the response of the fetch from the OpenWeatherMap server
-  const response = await fetch(weatherUrl);
+  const currentWeatherResponse = await fetch(currentWeatherUrl);
+  const currentForecastResponse = await fetch(currentForecastUrl);
 
   // Parse the response and return an object
-  const weatherData = await parseResponse(response);
-
-  console.log(weatherData);
+  const currentWeatherData = await parseResponse(currentWeatherResponse);
+  const currentForecastData = await parseResponse(currentForecastResponse);
+  console.log(currentWeatherData);
+  console.log(currentForecastData);
   // Log the information
-  console.log(`The current weather in ${coordinates[2]} at coordinates ${coordinates[0]} in the country ${weatherData.sys.country} is ${weatherData.main.temp} degrees celsius`);
-  return weatherData.main.temp;
+  console.log(`The current weather in ${coordinates[2]} at coordinates ${coordinates[0]} in the country ${currentWeatherData.sys.country} is ${currentWeatherData.main.temp} degrees celsius`);
+  return currentWeatherData.main.temp;
 }
 
 export default getWeather;
